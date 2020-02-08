@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+<script type="text/javascript">
+	// Creating an object using a constructor function
+	function person(name, age)
+	{
+		this.name = name;
+		this.age = age;
+		this.yearsUntilRetire = yearsLeft;
+	}
+	
+	// Function associated with the object "person"
+	function yearsLeft()
+	{
+		var numYears = 65 - this.age;
+		return numYears;
+	}
+	
+	var son = new person("Rokas", 21);
+	var mother = new person("Kristina", 45);
+	var father = new person("Gintaras", 50);
+	
+	// Creating an object using an initializer
+	dog = {name:"Baksas", breed:"German shepherd"};
+	cat = {name:"Noras", breed:"Siamese"};
+</script>
+</head>
+
+<body>
+
+<script type="text/javascript">
+	// Objects.html By Rokas Sidaravičius, 2019
+	document.write("Son's name : "+son.name+"<br />");
+	document.write(son.yearsUntilRetire()+" years until son's retirement."+"<br />");
+	document.write("Cat's name : "+cat.name+". Breed - "+cat.breed+"<br />");
+	document.write("Dog's name : "+dog.name+". Breed - "+dog.breed+"<br />");
+</script>
+
+
+</body>
+
+</html>

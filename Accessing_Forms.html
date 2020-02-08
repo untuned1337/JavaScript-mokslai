@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+</head>
+
+<body>
+<form name="login">
+	Username: <input type="text" name="username"/>
+	Password: <input type="password" name="password"/>
+	<input type="submit" value="Submit!" onclick="showName()"/>
+</form>
+
+<form name="checkForm">
+	<input type="checkbox" name="box" />
+	<input type="button" value="Press me!" onclick="validate()" />
+</form>
+
+<script type="text/javascript">
+	// Accessing_Forms.html By Rokas Sidaravičius, 2019	
+	var x = document.login.length;
+	document.write("Login form's element count : "+x+"<br />");
+	
+	
+	function showName()
+	{
+		var username = document.login.username.value;
+		alert("Hi, " + username);
+	}
+	
+	function validate()
+	{
+		if(document.checkForm.box.checked)
+		{
+			alert("The box is checked");
+		}
+		else
+		{
+			alert("The box is not checked");
+		}
+	}
+	
+</script>
+</body>
+
+</html>

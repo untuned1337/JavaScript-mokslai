@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+</head>
+
+<body>
+
+<script type="text/javascript">
+	// prompt.html By Rokas Sidaravičius, 2019
+	
+	//var getName = prompt("Enter your name:", "");
+	//document.write("Hello " + getName);
+	
+	// Adding elememts from prompt to an array
+	var things = new Array(3);
+	for(i=0; i<3; i++)
+	{
+		things[i] = prompt("Add something to the Array");
+	}
+	
+	document.write(things.join());
+	
+	// Writing out elements using a for-loop
+	var stuff = new Array("banana", "meat", "apple juice");
+	stuff.sort();
+	
+	for(i=0; i<stuff.length; i++)
+	{
+		document.write(stuff[i]+"<br />");
+	}
+	
+</script>
+
+
+</body>
+
+</html>

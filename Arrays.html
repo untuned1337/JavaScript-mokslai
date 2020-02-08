@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+</head>
+
+<body>
+
+<script type="text/javascript">
+	// Arrays.html By Rokas Sidaravičius, 2019
+	
+	// 1 way to create an array
+	var people = new Array("Rokas", "Kristina", "Gintaras"); // Array with defined elements
+	for(i=0; i<people.length; i++)
+	{
+		document.write(people[i]+"<br />");
+	}
+	
+	// 2 way to create an array
+	var pets = new Array(2); // Array with a defined length
+	pets[0] = "Baksas";
+	pets[1] = "Noras";
+	
+	// 3 way to create and array
+	var food = new Array(); // Dynamic array
+	
+	// Joining two arrays together
+	var family = people.concat(pets);
+	for(i=0; i<family.length; i++)
+	{
+		document.write(family[i]+"<br />");
+	}
+	
+	// Joining all array's elemtens into a string
+	var allMembers = family.join(); // comma separator by default
+	document.write(allMembers+"<br />");
+	
+	family.pop(); // Method "pop()" removes the last element of the array (Stack principle).
+	
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head></head>
+
+<body>
+
+<script type="text/javascript">
+	// Functions.html By Rokas Sidaravičius, 2019
+	
+	// FUNCTION WITH NO PARAMETERS
+	function example()
+	{
+		alert("The button is pressed and the Function is called");
+	}
+	
+	// FUNCTION WITH 1 PARAMETER
+	function printSomething(name)
+	{
+		alert("Info printed : " + name);
+	}
+
+	
+	// FUNCTION WITH MULTIPLE PARAMETERS
+	function sum(x, y)
+	{
+		result = x + y;
+		document.write(x + " + " + y + " = " + result + "<br />");
+	}	
+
+	
+	// FUNCTION WHICH RETURNS A VALUE
+	function returnSomething()
+	{
+		return "Something is returned<br />";
+	}	
+	
+	function callAllFunctions()
+	{
+		printSomething("My name is Rokas Sidaravičius");
+		printSomething("My age is 20");
+		
+		sum(4, 5);
+		sum(10, 2);
+		sum(43, 3);
+		sum(11, 2);
+		
+		document.write(returnSomething());
+	}
+	
+	callAllFunctions();
+</script>
+
+<form>
+<input type="button" value="Press me" onclick="example()">
+</form>
+
+</body>
+
+</html>
